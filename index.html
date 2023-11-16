@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <navbar>
+            <div class="logo">
+                Divanshu Singh
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about_us">About Us</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                </ul>
+
+            </div>
+        </navbar>
+    </header>
+    <div id="home" class="main">
+        <div class="left">Hello,<br>
+            My name is <Span>Divanshu Singh</Span><br>
+            I am a Web Developer
+            <br>
+            <button class="button_1" type="button">Download CV</button>
+
+        </div>
+        <div class="right">
+
+            <img src="image1.jpg">
+        </div>
+    </div>
+    <div id="about_us" class="about">
+        <h1 style="padding-top: 20px;padding-left: 40px; text-decoration: underline;">About Us</h1>
+        <p class="para">I am ‘Divanshu Singh’. I am a UI/UX creator situated in Pune, India. I have broad involvement in
+            web
+            structuring; UI/UX and advancement with incredible capacity of rotate thoughts into plan which imparts
+            innovatively. Each plan made motivates and accomplishes my objectives and client needs.</p><br>
+
+        <p class="para">I have proficient involvement in structure field amassed by working with many regarded
+            organizations where I
+            have chipped away at various undertakings which helped me to develop and manufacture a way of life as a
+            decent
+            originator in the business throughout the years. My work procedure includes ideal from envisioning how
+            clients
+            business can be reflected through the structures to finding the business flawlessly with extraordinary
+            execution
+            and support.</p><br>
+
+        <p class="para">While working for quite a while in this industry, I have aced myself to plan pixel impeccable
+            fine arts which
+            are off base cherished and increased in value by clients. These broad standards of my structure have
+            dependably
+            helped me to construct broad customer arrange all through the globe.</p>
+        <br>
+
+        <p class="para">I am graduate and seen structuring confirmations. Additionally upgrading learning and building
+            planning
+            abilities through everyday venture encounters.</p><br><br>
+    </div>
+    <div id='skills' class="skills">
+        <h1>Skills</h1>
+
+        <button class="accordion" style="margin-top: 20px;">HTML</button>
+        <div class="panel">
+            <p class="p">HTML stands for HyperText Markup Language. It is used to design the web pages. With the help of
+                HTML, you can create a complete website structure. HTML is the combination of Hypertext and Markup
+                language. Hypertext defines the link between the web pages and markup language defines the text document
+                within the tag that define the structure of web pages.</p>
+        </div>
+
+        <button class="accordion">CSS</button>
+        <div class="panel">
+            <p class="p">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of
+                a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML
+                or XHTML).CSS is designed to enable the separation of content and presentation, including layout,
+                colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and
+                control in the specification of presentation characteristics</p>
+        </div>
+
+        <button class="accordion">JAVASCRIPT</button>
+        <div class="panel">
+            <p class="p">JavaScript (JS) is the most popular lightweight, interpreted compiled programming language. It
+                can be used for both Client-side as well as Server-side developments. JavaScript also known as a
+                scripting language for web pages. This JavaScript Tutorial is designed to help both beginners and
+                experienced professionals master the fundamentals of JavaScript and unleash their creativity to build
+                powerful web applications.</p>
+
+        </div>
+        <br>
+
+    </div>
+    <div class="contact1">
+    <div id='contactus' class="container">
+        <h1 class="con">Contact Us</h1>
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+      </div>
+      <div class="copy">
+        Divanshu Singh &copy;opyright 2023
+      </div>
+   
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <br>
+
+</body>
+
+</html>
